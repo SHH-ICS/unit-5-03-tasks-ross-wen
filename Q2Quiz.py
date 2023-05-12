@@ -4,6 +4,7 @@
 #read file
 readQ = open("questions.txt","r")
 
+#print the multiple choice question
 question = readQ.readline()
 print("The question is:\n" + question)
 a = readQ.readline()
@@ -16,8 +17,10 @@ print("B." + b)
 print("C." + c)
 print("D." + d)
 
+#ask user for answer
 UserAnswer = input("What is the correct answer?\n")
 
+#determine if answer is right or not
 if UserAnswer == answer:
     print("Correct!")
 else:
